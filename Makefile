@@ -1,3 +1,5 @@
+PREFIX=/usr/local
+DESTDIR=/
+
 install:
-	install -d $(DESTDIR)$(PREFIX)/include/
-	install -m 644 include/* $(DESTDIR)$(PREFIX)/include/
+	cp -r include/* $(DESTDIR)$(PREFIX)/include/
